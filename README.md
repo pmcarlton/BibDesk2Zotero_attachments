@@ -23,7 +23,7 @@ a new field that the appropriate translator can recognize.
 - Quit Zotero standalone
 - Backup the old BibTex.js file from, then copy this one into, your Zotero translators
 directory (something like `$HOME/Library/Application Support/Zotero/Profiles/XXXXXX.default/zotero/translators`)
-- Then launch Zotero standalone and perform an import of NEW.bib 
+- Then launch **Zotero standalone** and perform an import of NEW.bib 
     
 # What the programs do:
 
@@ -41,7 +41,7 @@ directory (something like `$HOME/Library/Application Support/Zotero/Profiles/XXX
     records also scans for the presence of "Local-Zo-Url-N" fields, and
     adds a Zotero attachment for every such field for each entry.
     
-- Can create from existing BibTex.js (as of translator ID 9cb70025-a888-4a29-a210-93ec52da40d4, 2013-02-03) thusly:
+- Can create via `sed` from existing BibTex.js (as of translator ID 9cb70025-a888-4a29-a210-93ec52da40d4, 2013-02-03) thusly:
     
         1786a
         } else if (field.match(/Local-Zo-Url/i)) {
