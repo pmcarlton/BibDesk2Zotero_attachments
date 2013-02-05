@@ -9,7 +9,7 @@ bibliography (in BibTeX format) containing local file attachments in the form of
 attachments included*, using the (included)
 BibTex.js translator file. 
 
-**Important**: the BibDesk bibliography file must be in the same directory as the attachment root directory.
+**Important**: To convert successfully, the BibDesk bibliography file must be in the same directory as the attachment root directory.
 (i.e., if you have a "Papers" directory containing PDFs, movies, etc., the BibDesk file must be located in that
 "Papers" directory. You can move or copy it there if it's not already, of course.)
 
