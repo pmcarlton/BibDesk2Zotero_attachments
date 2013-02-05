@@ -10,7 +10,7 @@ attachments included*, using the (included)
 BibTex.js translator file. 
 
 **Important**: the BibDesk bibliography file must be in the same directory as the attachment root directory.
-(i.e., if you have a "Papers" directory containing PDFs, movies, etc. in subdirectories, the BibDesk file must be located in that
+(i.e., if you have a "Papers" directory containing PDFs, movies, etc., the BibDesk file must be located in that
 "Papers" directory.)
 
 # Rationale:
