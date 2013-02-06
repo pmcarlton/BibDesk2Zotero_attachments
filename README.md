@@ -4,7 +4,7 @@ Here is a pair of files that should allow you to convert a BibDesk
 bibliography (in BibTeX format) containing local file attachments in the form of
 (Bdsk-File) to a new BibTeX file that Zotero can import *along with 
 all of its attachments*, using the (included)
-BibTex.js translator file. 
+BibTex.js translator file. All attachments (excepting entire directories) in each entry present in the original BibDesk file should come along seamlessly into Zotero.
 
 **Important**: To convert successfully, the BibDesk bibliography file must be in the same directory as the attachment root directory.
 (i.e., if you have a "Papers" directory containing PDFs, movies, etc., the BibDesk file must be located in that
@@ -53,7 +53,7 @@ directory (something like `$HOME/Library/Application Support/Zotero/Profiles/XXX
 - Tested on OS X 10.8.2, Zotero standalone 3.0.11.1, BibDesk 1.5.10
 - Requires system utilities "dirname", "grep", "tail", "base64" and "plutil" (standard on
 Mac OS X).
-- Requires the directory /tmp exists and is user-writable (can be
+- Requires that the directory /tmp exists and is user-writable (can be
     customized).
 - Correct functioning of the program depends on the current way
     that BibDesk (as of version 1.5.10) encodes local attachments, and
