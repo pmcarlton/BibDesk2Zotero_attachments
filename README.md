@@ -1,12 +1,9 @@
 # Summary:
 
-Convert your BibDesk library to a format that can be imported *with
-all of its attachments* into Zotero (translator included).
-
 Here is a pair of files that should allow you to convert a BibDesk
 bibliography (in BibTeX format) containing local file attachments in the form of
-(Bdsk-File) to a new BibTeX file that Zotero can import *with 
-attachments included*, using the (included)
+(Bdsk-File) to a new BibTeX file that Zotero can import *along with 
+all of its attachments*, using the (included)
 BibTex.js translator file. 
 
 **Important**: To convert successfully, the BibDesk bibliography file must be in the same directory as the attachment root directory.
