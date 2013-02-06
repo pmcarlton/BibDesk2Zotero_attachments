@@ -1,7 +1,7 @@
 # Summary:
 
 Convert your BibDesk library to a format that can be imported *with
-attachments* into Zotero (translator included).
+all of its attachments* into Zotero (translator included).
 
 Here is a pair of files that should allow you to convert a BibDesk
 bibliography (in BibTeX format) containing local file attachments in the form of
