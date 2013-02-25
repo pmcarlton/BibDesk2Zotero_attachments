@@ -1,6 +1,6 @@
 # Summary:
 
-Here is a pair of files that should allow you to convert a BibDesk
+BibDesk2Zotero (with attachments) is a pair of files that should allow you to convert a BibDesk
 bibliography (in BibTeX format) containing local file attachments in the form of
 (Bdsk-File) to a new BibTeX file that Zotero can import *along with 
 all of its attachments*, using the (included)
