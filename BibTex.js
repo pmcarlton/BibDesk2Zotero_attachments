@@ -1784,8 +1784,8 @@ function processField(item, field, value) {
 		item.notes.push({note:Zotero.Utilities.text2html(value)});
 	} else if (field == "pdf") {
 		item.attachments = [{path:value, mimeType:"application/pdf"}];
-	} else if (field.match(/Local-Zo-Url/i)) {
-        item.attachments.push({path:value}); 
+} else if (field.match(/Local-Zo-Url/i)) {
+		item.attachments.push({path:value,mimeType:”application/pdf"}); 
 	} else if (field == "sentelink") { // the reference manager 'Sente' has a unique file scheme in exported BibTeX
 		item.attachments = [{path:value.split(",")[0], mimeType:"application/pdf"}];
 	} else if (field == "file") {
