@@ -29,7 +29,7 @@ chomp($line);
         print TMP $line;
         system("base64 -D -i $tmpname -o $tmpname.dec");
         system("plutil -convert xml1 $tmpname.dec");
-        my $decoded=`grep -A 3 classname $tmpname.dec |grep -A 3 NSMutableData|tail -n 2|head -n 1`;
+my $decoded=`grep -A 3 relative $tmpname.dec | tail -n 2 | head -n 1`;
         my $testtype=$decoded;$testtype=~s/<string>//;$testtype=~s/<\/string>//;$testtype=~s/\t//g;$testtype=$basedir.'/'.$testtype;
         chomp $testtype;
         $decoded =~ s/<string>/Local-Zo-Url-$num = {$basedir\//;
