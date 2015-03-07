@@ -9,7 +9,7 @@
 	"priority": 200,
 	"inRepository": true,
 	"browserSupport": "gcsv",
-	"displayOptions": {
+	"displayOptions": { 
 		"exportCharset": "UTF-8",
 		"exportNotes": true,
 		"exportFileData": false,
