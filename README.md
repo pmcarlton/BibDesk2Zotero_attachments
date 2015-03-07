@@ -50,7 +50,7 @@ directory (something like `$HOME/Library/Application Support/Zotero/Profiles/XXX
         .
 
 # Requirements and limitations
-- Tested on OS X 10.8.2, Zotero standalone 3.0.11.1, BibDesk 1.5.10
+- Originally tested on OS X 10.8.2, Zotero standalone 3.0.11.1, BibDesk 1.5.10. As of 2015-03-07, I have not tested it, but have updated both the perl script and the translator based on user feedback, to work with the latest versions of BibDesk and Zotero. Please give me feedback if you have problems.
 - Requires system utilities "dirname", "grep", "tail", "base64" and "plutil" (standard on
 Mac OS X).
 - Requires that the directory /tmp exists and is user-writable (can be
