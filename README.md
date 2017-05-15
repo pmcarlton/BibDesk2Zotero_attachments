@@ -20,15 +20,13 @@ a new field that the appropriate translator can recognize.
 # Use: 
    
 - run the command `perl bdsk-to-zotero-attachments.pl /PATH/TO/OLD.bib /PATH/TO/NEW.bib` to create the new, attachment-import-enabled BibTeX file.    
-
+- install [Zotero Better BibTex](https://github.com/retorquere/zotero-better-bibtex) (as per [this issue](https://github.com/retorquere/zotero-better-bibtex/issues/667), Zotero Better BibTex supports the `Local-Zo-Url-N` "out of the box").
 - Quit Zotero standalone
-- Backup the old BibTex.js file from, then copy this one into, your Zotero translators
-directory (something like `$HOME/Library/Application Support/Zotero/Profiles/XXXXXX.default/zotero/translators`)
 - Then launch **Zotero standalone** and perform an import of NEW.bib 
     
-# What the programs do:
+# What script does
 
-## bdsk-zotero-attachments.pl
+`bdsk-zotero-attachments.pl`:
 
 - Scans your BibDesk bibliography for every instance of
     "Bdsk-File-N", which indicate local attachments.
@@ -36,14 +34,10 @@ directory (something like `$HOME/Library/Application Support/Zotero/Profiles/XXX
 - Writes out a new BibTeX file with the correct pathnames, listing
     each under a new field "Local-Zo-Url-N"
     
-## BibTex.js
-
-- A very slightly altered translator, which upon import of BibTeX
-    records also scans for the presence of "Local-Zo-Url-N" fields, and
-    adds a Zotero attachment for every such field for each entry.
     
 # Requirements and limitations
-- Originally tested on OS X 10.8.2, Zotero standalone 3.0.11.1, BibDesk 1.5.10. As of 2015-03-07, I have not tested it, but have updated both the perl script and the translator based on user feedback, to work with the latest versions of BibDesk and Zotero. Please give me feedback if you have problems.
+
+- Last tested on MacOS 10.12.4, Zotero Standalone 4.0.29.15, BibDesk 1.6.11, and Zotero Better Bibtex 1.6.97. As of 2017-05-15, *this still works*.
 - Requires system utilities "dirname", "grep", "tail", "base64" and "plutil" (standard on
 Mac OS X).
 - Requires that the directory /tmp exists and is user-writable (can be
@@ -52,8 +46,5 @@ Mac OS X).
     that BibDesk (as of version 1.5.10) encodes local attachments, and
     on the way that the Mac OS X "plutil" prints out the XML. Any
     changes in these factors will produce unexpected behavior.
-- Does not recursively import entire directories as attachments, but
-prints a warning to STDOUT that the directory was ignored.
-- As stated at the top, the BibDesk bibliography file must be in the same directory as the attachment root directory.
-(i.e., if you have a "Papers" directory containing PDFs, movies, etc., the BibDesk file must be located in that
-"Papers" directory.)
+- Does not recursively import entire directories as attachments, but prints a warning to STDOUT that the directory was ignored.
+- As stated at the top, the BibDesk bibliography file must be in the same directory as the attachment root directory. (i.e., if you have a "Papers" directory containing PDFs, movies, etc., the BibDesk file must be located in that "Papers" directory.)
