@@ -24,9 +24,7 @@ a new field that the appropriate translator can recognize.
 - Quit Zotero standalone
 - Then launch **Zotero standalone** and perform an import of NEW.bib 
     
-# What script does
-
-`bdsk-zotero-attachments.pl`:
+# What the `bdsk-zotero-attachments.pl` script does:
 
 - Scans your BibDesk bibliography for every instance of
     "Bdsk-File-N", which indicate local attachments.
